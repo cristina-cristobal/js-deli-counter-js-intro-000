@@ -28,13 +28,14 @@ function nowServing(katzDeliLine) {
   }
 }
 
+// [] = empty array
 /* .shift returns the beginning of array and then removes it (e.g., Ada)*/
 
 function currentLine(katzDeliLine) {
 var line = [];
 if(katzDeliLine > []) {
   for(var i = 0; i < katzDeliLine.length; i++) {
-      line.push(` ${i+1}. ${katzDeliLine[i]}`);
+      line.push(`${i+1}. ${katzDeliLine[i]}`);
     }
     return "The line is currently:" + line;
 }
